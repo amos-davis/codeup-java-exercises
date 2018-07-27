@@ -6,19 +6,19 @@ public class MethodsExercises {
 
     public static void main(String[] args) {
 
-        System.out.println(addition(3,5));
-        System.out.println(subtraction(1000, 900));
-        System.out.println(multiplication(12,11));
-        System.out.println(division(500,25));
-
-        System.out.println(modulus(12,5));
+//        System.out.println(addition(3,5));
+//        System.out.println(subtraction(1000, 900));
+//        System.out.println(multiplication(12,11));
+//        System.out.println(division(500,25));
+//
+//        System.out.println(modulus(12,5));
 
         System.out.println(getInteger(1, 10));
 
 //        System.out.print(calculateFactorials(3));
 
-        System.out.println("Welcome to the dice roll game");
-        playGame();
+//        System.out.println("Welcome to the dice roll game");
+//        playGame();
     }
 
 //   -----Methods Exercise Number 1:
