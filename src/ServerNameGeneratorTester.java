@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+import java.util.Random;
 
-public class ServerGeneratorTester {
+public class ServerNameGeneratorTester {
+
+    public static void main(String[] args) {
+
+
+
+    }
 }
