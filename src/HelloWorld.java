@@ -10,10 +10,10 @@ public class HelloWorld {
         System.out.println(myString);
 
 //        ---Cannot assign single character value to a string---
-    char myString = 's';
+//    char myString = 's';
 
 //    Cannot reasign myString value in this scope
-        double myString = 3.14159;
+//        double myString = 3.14159;
 
     
 
