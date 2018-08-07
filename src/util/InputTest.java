@@ -8,9 +8,9 @@ public class InputTest {
 //        Input in = new Input();
 //        getInt(2, 9);
 //        getString("What now?");
+//        getDouble(6.4, 11.9);
 
-
-        getDouble(6.4, 11.9);
-
+//        getInt();
+        getDouble();
     }
 }

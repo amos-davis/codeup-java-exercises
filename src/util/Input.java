@@ -2,6 +2,7 @@ package util;
 
 
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -10,6 +11,7 @@ public class Input {
 //        this.scanner = new Scanner(System.in);
 //    }
    private static Scanner sc = new Scanner(System.in);
+   private static Scanner sc2 = new Scanner(System.in);
 
 
 
@@ -37,9 +39,16 @@ public class Input {
 
     public static int getInt() {
         System.out.println("Enter your viewing preference here:  ");
+            try {
+                System.out.println("Message before...");
+                int userResponse = sc2.nextInt();
+                Integer.valueOf(userResponse);
+                System.out.println("message after..");
+                return userResponse;
+            } catch (InputMismatchException e) {
+                System.out.println("Something went wrong. That is not a valid input.");
+            }
         return 0;
-//        int userResponse = sc2.nextInt();
-//        return userResponse;
     }
 
     public static int getInt(int min, int max) {
@@ -47,15 +56,26 @@ public class Input {
             System.out.println("Enter a integer between " + min + " and " + max);
             int UserInput = sc.nextInt();
 
-        do {
-            if (UserInput < min || UserInput > max) {
-                getInt(min, max);
-            }
-        } while (continueInput);
-        return UserInput;
-
+                do {
+                    if (UserInput < min || UserInput > max) {
+                        getInt(min, max);
+                    }
+                } while (continueInput);
+                return UserInput;
     }
-    double getDouble() {
+
+
+    public static double getDouble() {
+        System.out.println("Enter your viewing preference here: (Decimals are accepted. ");
+        try {
+            System.out.println("Pre - Message...");
+            double userResponse = sc2.nextDouble();
+            Double.valueOf(userResponse);
+            System.out.println("Post - message..");
+            return userResponse;
+        } catch (InputMismatchException e) {
+            System.out.println("That's not right. Try a valid entry. ");
+        }
         return 0.0;
     }
 
@@ -71,6 +91,8 @@ public class Input {
         } while (tryAgain);
         return UserNumber;
     }
+
+
 
 
 }
